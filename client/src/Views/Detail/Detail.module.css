@@ -1,0 +1,52 @@
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#0b090a 30%, #161a1d 30%);
+    box-shadow: 0 0 25px darkred;
+    border-radius: 10px;
+    padding: 50px 16px;
+    margin: 50px auto;
+    width: 60%;
+  }
+  
+  .detail h1 {
+    color: peru;
+    margin-bottom: 20px;
+  }
+  
+  .detail h2 {
+    color: peru;
+    margin-bottom: 10px;
+  }
+  
+  .detail p {
+    color: white;
+    margin-top: 5px;
+  }
+  
+  .detail img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .detail button {
+    padding: 8px 20px;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+    margin-top: 20px;
+    background: linear-gradient(to left, rgb(245 215 189) 0%, rgb(237, 166, 104) 100%);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  
+  .detail button:hover {
+    padding: 8px 30px;
+    background: linear-gradient(to left, rgb(255, 161, 79) 0%, rgb(237, 166, 104) 100%);
+  }
+  

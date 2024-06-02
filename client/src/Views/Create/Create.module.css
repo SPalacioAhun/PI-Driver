@@ -1,0 +1,162 @@
+.custom_form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    opacity: calc(0.7);
+    color: antiquewhite;
+    margin-top: 20px;
+    border: none;
+  }
+  .titulo {
+    text-align: center;
+    color: rgb(8, 5, 0);
+    margin-top: 12px;
+  }
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input[type="text"],
+  .textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    border: solid 1px#007bff;
+  }
+  
+  .input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .danger {
+    font-size: 12px;
+    color: rgb(210, 39, 39);
+    text-align: center;
+  }
+  .teams {
+    background-color: #518dcf;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .selectedTeam {
+    background-color: #518dcf;
+    padding: 5px;
+    margin: 3px;
+    text-align: center;
+  }
+  .deleteButton {
+    border: none;
+    margin-left: 12px;
+    border-radius: 12px;
+    background-color: crimson;
+    cursor: pointer;
+  }
+
+  .guiaP {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .spanBo {
+    text-decoration: none;
+  }
+
+  .buttonVolver {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    color: whitesmoke;
+    border: 3px solid #b1a7a6;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    background: #F23030;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 8px 12px,
+    rgba(0, 0, 0, 0.3) 5px 1px 10px 3px, rgba(1, 0, 0, 0.2) 0px -1px 2px inset;
+  }
+
+  .buttonVolver:hover {
+    background-color: #b1a7a6;
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+  }
+
+  .spanV {
+    margin-bottom: -8.5px;
+  }
+
+  .containerGuia {
+    margin-top: 50px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    padding: 20px;
+    color: #575757;
+  }
+
+  .containerGuia p {
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    -webkit-animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+      both;
+    animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+
+  .linkParaCrear {
+    color: darkorange;
+  }
+
+  .guiaP {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .guia1 {
+    margin-bottom: 10px;
+  }
+
+  .formContainer {
+    background-color: #d3d3d3;
+    display: block;
+    padding: 1rem;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .necesitasP {
+    justify-content: left;
+  }
+  
+  .containerF {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 90px;
+  }

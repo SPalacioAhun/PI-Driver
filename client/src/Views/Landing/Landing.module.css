@@ -1,0 +1,59 @@
+.landingBackground {
+     background-image: url('../../assets/formula-1-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ce6808;
+    text-align: center;
+  }
+  
+  .landingText {
+    font-size: 4rem; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita para mayor énfasis */
+    text-shadow: 2px 2px 4px rgb(245, 238, 238); /* Sombra de texto para hacerlo más visible */
+  }
+  
+  .content {
+    width: 80%; /* Ajusta el ancho del contenido si es necesario */
+  }
+  
+  .welcomePopup {
+    background-color: transparent;
+    color: #AA1803;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Skranji';
+  }
+  
+  .welcomePopupContent {
+    background-color: #f1baa18f;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(166, 218, 45, 0.3);
+    text-align: center;
+    position: relative;
+    font-family: 'Skranji';
+  }
+  
+  .button {
+    background-color: #6D8C00;
+    color: white;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    font-size: 100%;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Skranji';
+    border-radius: 10px;
+  }
+  
+  .button:hover {
+    background-color: #BCAF4D;
+    transform: scale(1.05);
+  }

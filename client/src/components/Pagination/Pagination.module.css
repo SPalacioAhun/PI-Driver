@@ -1,0 +1,50 @@
+/* .buttonP {
+    --size: 45px;
+    --margin: 6px;
+    margin: 0 var(--margin);
+    border-radius: 10px;
+    background: #267365;
+    max-width: auto;
+    min-width: var(--size);
+    height: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 6px;
+    color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 8px 12px,
+      rgba(0, 0, 0, 0.3) 5px 1px 10px 3px, rgba(1, 0, 0, 0.2) 0px -1px 2px inset;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+  } */
+
+  .pagination_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination_button {
+    background-color: #b1a7a6; /* Color de fondo */
+    color: #0b090a; /* Color de texto */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination_button:hover {
+    background-color: #ba181b; /* Cambio de color al pasar el mouse */
+  }
+  
+  .pagination_button:disabled {
+    opacity: 0.5; /* Opacidad reducida para los botones desactivados */
+    cursor: not-allowed; /* Cursor de no permitido para los botones desactivados */
+  }

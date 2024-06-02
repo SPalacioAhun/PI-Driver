@@ -1,0 +1,93 @@
+.aboutContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+   .fondo {
+    width: 550px;
+    opacity: 0.5;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  } 
+  
+  .aboutContainer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .aboutContainer p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .aboutWrapper {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .aboutContainer {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .aboutContainer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .aboutContainer p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .buttonVolver {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    color: whitesmoke;
+    border: 3px solid #b1a7a6;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    background: #F23030;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 8px 12px,
+    rgba(0, 0, 0, 0.3) 5px 1px 10px 3px, rgba(1, 0, 0, 0.2) 0px -1px 2px inset;
+    
+  }
+  
+  .buttonVolver:hover {
+    background-color: #b1a7a6;
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+  }
+
+  .spanBo {
+    text-decoration: none;
+  } 
+  
+  .volverSpan {
+    font-size: 20px;
+    color: whitesmoke;
+    margin-bottom: -9px;
+  }
+
+  .boldText {
+    font-weight: bold;
+  }
+  
