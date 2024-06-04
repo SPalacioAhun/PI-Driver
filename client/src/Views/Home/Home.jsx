@@ -23,13 +23,13 @@ const Home = () => {
   const dispatch = useDispatch();
   const allDrivers = useSelector((state) => state.copyDriver);
   const teams = useSelector((state) => state.teams);
-  //const [, setOrden] = useState("");
+
 
 
 
   const [currentPage, setCurrentPage] = useState(1);
-  const GAMESXPAGE = 9;
-  const LAST_PAGE = Math.ceil(allDrivers.length / GAMESXPAGE);
+  const DRIVERSXPAGE = 9;
+  const LAST_PAGE = Math.ceil(allDrivers.length / DRIVERSXPAGE);
 
 
   const handleClick = (event) => {
@@ -51,13 +51,10 @@ const Home = () => {
         break;
     }
   };
-  const firsrItem = GAMESXPAGE * (currentPage - 1);
-  const lastItem = firsrItem + GAMESXPAGE;
+  const firsrItem = DRIVERSXPAGE * (currentPage - 1);
+  const lastItem = firsrItem + DRIVERSXPAGE;
   const showedCards = allDrivers.slice(firsrItem, lastItem);
 
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [allDrivers]);
 
   useEffect(() => {
     dispatch(getDrivers());
@@ -65,30 +62,22 @@ const Home = () => {
 
   }, [dispatch]);
 
-
-
   // A-Z Z-A
   const handleSort = (e) => {
     e.preventDefault();
     dispatch(ordenDriver(e.target.value));
-    setCurrentPage(1);
-    // setOrden(`Ordenado ${e.target.value}`);
   };
 
   //Creados - api
   const handleFilterCreated = (e) => {
     e.preventDefault();
     dispatch(getAllApiBd(e.target.value));
-    setCurrentPage(1)
-
   };
 
   //Fecha
   const handleSortBirthdate = (e) => {
     e.preventDefault();
     if (e.target.value !== "fecha") dispatch(ordenDriverDod(e.target.value));
-    setCurrentPage(1);
-    //setOrden(`Ordenado ${e.target.value}`);
   };
 
   //escuderias
@@ -96,7 +85,6 @@ const Home = () => {
     e.preventDefault();
     if (e.target.value !== "Equipos") {
       dispatch( filTrarTeams(e.target.value));
-       setCurrentPage(1);
     }
   };
 

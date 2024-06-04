@@ -23,10 +23,7 @@ export const getDrivers = () => {
   
         dispatch({ type: GET_DRIVERS, payload: drivers });
       } catch (error) {
-      
         console.error("Error al obtener los conductores:", error);
-        // Puedes despachar una acción adicional si quieres manejar el error en el estado de tu aplicación
-        // dispatch({ type: GET_DRIVERS_ERROR, payload: error });
       }
     };
   };
@@ -69,8 +66,6 @@ export const getDrivers = () => {
   export const posDrivers = (formData) => {
     return async function () {
       try {
-      
-        // En lugar de enviar una solicitud POST vacía, envía los datos en el cuerpo de la solicitud
         await axios.post("http://localhost:3001/drivers", formData);
   
         alert("Conductor creado exitosamente:", formData);

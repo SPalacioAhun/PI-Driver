@@ -6,7 +6,7 @@ const obtenerTeams = async () => {
   const obtener = await Team.findAll();
   const apiData = (await axios.get("http://localhost:5000/drivers")).data;
 
-  const uniqueTeams = new Set(); // Usamos un conjunto para almacenar equipos únicos
+  const uniqueTeams = new Set(); //  almacenar equipos únicos
 
   apiData.forEach(async ({ teams }) => {
     if (teams) {

@@ -29,25 +29,29 @@ const Create = () => {
   const handleChange = (event) => {
     event.preventDefault();
     if (event.target.name === "teams") {
-      if (form.teams.includes(event.target.value)) {
-        return;
-      }
       setForm({
         ...form,
         [event.target.name]: [...form[event.target.name], event.target.value],
       });
+
+      setErrors(
+        validation({
+          ...form,
+          [event.target.name]: event.target.value,
+        })
+      );
     } else {
       setForm({
         ...form,
         [event.target.name]: event.target.value,
       });
+      setErrors(
+        validation({
+          ...form,
+          [event.target.name]: event.target.value,
+        })
+      );
     }
-    setErrors(
-      validation({
-        ...form,
-        [event.target.name]: event.target.value,
-      })
-    );
   };
 
   const handleSubmit = (e) => {
@@ -68,7 +72,8 @@ const Create = () => {
       description: "",
       teams: [],
     });
-    setFormSubmitted(true);
+    setErrors({})
+    setFormSubmitted(false);
   };
 
   const disable = () => {
